@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>phatgit</id>
+    <title>PhatGit</title>
+    <version>1.0.3.18</version>
+    <authors>Iain Brighton</authors>
+    <owners>Iain Brighton</owners>
+    <description>This Powershell module wraps the native Git output streams so that they play nicely in an interactive PowerShell ISE session.</description>
+    <projectUrl>https://github.com/iainbrighton/PhatGit</projectUrl>
+    <copyright>(c) 2015 Iain Brighton. All rights reserved.</copyright>
+    <iconUrl>https://raw.githubusercontent.com/iainbrighton/PhatGit/b0d3234d050d9be087a088afd95a15c744d76cea/PhatGit.png</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/iainbrighton/PhatGit/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>VirtualEngine Powershell ISE Git</tags>
+  </metadata>
+</package>
