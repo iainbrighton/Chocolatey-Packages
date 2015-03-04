@@ -6,9 +6,10 @@
     <version>4.0.3</version>
     <authors>NTeWORKS</authors>
     <owners>Iain Brighton</owners>
-    <description>all-in-one design tool for everyone. A full-featured screen capture tool, Intuitive image editor, color picker, color palette, pixel-ruler, protractor, crosshair, whiteboard and more. User friendly and full of features for creating your image, Suitable for software developers, graphic designers and home users.</description>
+    <description>All-in-one design tool for everyone. A full-featured screen capture tool, Intuitive image editor, color picker, color palette, pixel-ruler, protractor, crosshair, whiteboard and more. User friendly and full of features for creating your image, Suitable for software developers, graphic designers and home users.</description>
     <projectUrl>http://www.picpick.org/</projectUrl>
     <copyright>(c) Copyright NTeWORKS</copyright>
+    <iconUrl>https://cdn.rawgit.com/iainbrighton/Chocolatey-Packages/8eede115b7f0395d70330433c7f09132bb736916/PicPick.Portable/PicPick.png</iconUrl>
     <licenseUrl>http://www.nteworks.com/EULA</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Screenshot Screen Capture</tags>
