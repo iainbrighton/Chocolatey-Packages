@@ -9,7 +9,7 @@
     <description>AppV_Manage is the tool of choice for people packaging in App-V 5 for performing the initial tests on recently sequenced packages.  It is used on an App-V client test machine, and requires no back-end servers (although a file share where the packages are stored is typically used). You sequence, copy the package up to the share, and bounce over to the client to test.</description>
     <projectUrl>http://www.tmurgent.com/appv/index.php/resources/AppV_Manage/221-appv-manage-introduction</projectUrl>
     <copyright>(c) Copyright TMurgent Technologies, LLP</copyright>
-    <iconUrl>http://www.tmurgent.com/images/tmurgentlogo3h_150x150.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/iainbrighton/Chocolatey-Packages/1635689823f6d605e107ef4c536b4166f8634589/AppVManage/AppVManage.png</iconUrl>
     <licenseUrl>http://www.tmurgent.com/appv/index.php/resources/AppV_Manage/225-appv-manage-installation</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>App-V AppV</tags>
