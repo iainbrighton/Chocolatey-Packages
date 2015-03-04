@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>appvmanage</id>
+    <title>AppV Manage</title>
+    <version>3.11.0.0</version>
+    <authors>TMurgent Technologies</authors>
+    <owners>Iain Brighton</owners>
+    <description>AppV_Manage is the tool of choice for people packaging in App-V 5 for performing the initial tests on recently sequenced packages.  It is used on an App-V client test machine, and requires no back-end servers (although a file share where the packages are stored is typically used). You sequence, copy the package up to the share, and bounce over to the client to test.</description>
+    <projectUrl>http://www.tmurgent.com/appv/index.php/resources/AppV_Manage/221-appv-manage-introduction</projectUrl>
+    <copyright>(c) Copyright TMurgent Technologies, LLP</copyright>
+    <iconUrl>http://www.tmurgent.com/images/tmurgentlogo3h_150x150.png</iconUrl>
+    <licenseUrl>http://www.tmurgent.com/appv/index.php/resources/AppV_Manage/225-appv-manage-installation</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>App-V AppV</tags>
+  </metadata>
+</package>
