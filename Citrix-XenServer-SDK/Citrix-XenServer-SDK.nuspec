@@ -9,7 +9,7 @@
     <description>XenServer is an enterprise-class, cloud-proven, virtualization platform that delivers all of the critical features needed for any server and datacenter virtualization implementation.  The following list summarizes some of the key capabilities of XenServer, and a complete technical FAQ can be found on the Citrix support web site.</description>
     <projectUrl>http://www.xenserver.org/</projectUrl>
     <copyright>(c) XenServer.org</copyright>
-    <iconUrl>http://www.xenserver.org/images/logo/logo.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/iainbrighton/Chocolatey-Packages/68b560d98b7f4f13c6fd1a229ab4cd06673de75a/Citrix-XenServer-SDK/Citrix-XenServer-SDK.png</iconUrl>
     <licenseUrl>http://www.xenserver.org/overview-xenserver-open-source-virtualization/gplv2-license/13-about-xenserver-open-source/152-eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Citrix XenServer SDK Powershell</tags>

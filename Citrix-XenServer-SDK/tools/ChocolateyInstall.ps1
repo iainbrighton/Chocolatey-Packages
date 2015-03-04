@@ -1,4 +1,4 @@
-﻿## Template VirtualEngine.Build ChocolateyInstall.ps1 file for zippped EXE/MSI installations
+﻿## Template VirtualEngine.Build ChocolateyInstall.ps1 file for zipped EXE/MSI installations
 $packageToolsPath = Split-Path -parent $MyInvocation.MyCommand.Definition;
 Install-ChocolateyZipPackage -PackageName 'Citrix-XenServer-SDK' -Url 'http://downloadns.citrix.com.edgesuite.net/akdlm/7289/XenServer-6.2.0-SDK.zip' -UnzipLocation $packageToolsPath;
 $packageFilePath = Join-Path $packageToolsPath -ChildPath 'XenServer-SDK\XenServerPSSnapIn\XenServerPSSnapIn-6.2.0-1.msi';
