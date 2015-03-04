@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>nitroreader.install</id>
+    <title>Nitro Reader</title>
+    <version>3.5.6.5</version>
+    <authors>Nitro Software Inc</authors>
+    <owners>Iain Brighton</owners>
+    <description>Make it. Mark it. Sign it. Share it. Do everything you expect with a PDF reader, and then some. Create PDF files from any source easily. Sign them securely. Then collaborate with anyone, anywhere.</description>
+    <projectUrl>https://www.gonitro.com/pdf-reader</projectUrl>
+    <copyright>(c) Copyright Nitro Software, Inc</copyright>
+    <iconUrl>https://cdn.rawgit.com/TomOne/various/078aa6888262ef8c630c49c8adee255515bab83b/nitroreader.png</iconUrl>
+    <licenseUrl>https://www.gonitro.com/pdf-reader/support/eula</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>Nitro PDF Reader</tags>
+  </metadata>
+</package>
