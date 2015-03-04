@@ -12,6 +12,6 @@
     <iconUrl>https://cdn.rawgit.com/iainbrighton/Chocolatey-Packages/619ee7794826bd7a529d9db9ffb256897a7f668f/ACE/ACE.png</iconUrl>
     <licenseUrl>http://virtualengine.co.uk/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>App-V AppV Configuration Editor Microsoft Virtual Engine VET</tags>
+    <tags>App-V AppV Configuration Editor Microsoft VirtualEngine VET</tags>
   </metadata>
 </package>
