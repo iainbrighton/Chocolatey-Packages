@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>ace</id>
+    <title>App-V Configuration Editor</title>
+    <version>1.3</version>
+    <authors>Virtual Engine</authors>
+    <owners>Iain Brighton</owners>
+    <description>The App-V 5 Configuration Editor (ACE) is part of the Virtual Engine Toolkit that provides an easy way to modify Microsoft Application Virtualization (App-V 5) dynamic configuration files.</description>
+    <projectUrl>http://virtualengine.co.uk/ace/</projectUrl>
+    <copyright>(c) Copyright Virtual Engine Limited</copyright>
+    <iconUrl>http://cdn.virtualengine.co.uk/wp-content/uploads/ACE-256px.png</iconUrl>
+    <licenseUrl>http://virtualengine.co.uk/eula/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>App-V AppV Configuration Editor Microsoft Virtual Engine VET</tags>
+  </metadata>
+</package>
