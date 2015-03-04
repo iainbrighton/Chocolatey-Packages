@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>picpick.portable</id>
+    <title>PicPick (Portable)</title>
+    <version>4.0.3</version>
+    <authors>NTeWORKS</authors>
+    <owners>Iain Brighton</owners>
+    <description>all-in-one design tool for everyone. A full-featured screen capture tool, Intuitive image editor, color picker, color palette, pixel-ruler, protractor, crosshair, whiteboard and more. User friendly and full of features for creating your image, Suitable for software developers, graphic designers and home users.</description>
+    <projectUrl>http://www.picpick.org/</projectUrl>
+    <copyright>(c) Copyright NTeWORKS</copyright>
+    <licenseUrl>http://www.nteworks.com/EULA</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>Screenshot Screen Capture</tags>
+  </metadata>
+</package>
