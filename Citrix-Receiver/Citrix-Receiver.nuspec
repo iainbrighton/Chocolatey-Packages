@@ -9,7 +9,7 @@
     <description>High performance access to Windows virtual apps and desktops. Configure for anywhere access from your desktop or web access with Chrome, Internet Explorer or Firefox. For domain and non-domain joined PCs, tablets, and thin clients. Provides high performance use of virtualized Microsoft Lync, 3DPro engineering apps, local app access.</description>
     <projectUrl>http://www.citrix.com/downloads/citrix-receiver/windows/</projectUrl>
     <copyright>(c) Copyright Citrix Systems, Inc.</copyright>
-    <iconUrl>http://web.citrix.com/go/citrix-resources/mwidgets/social/citrix-logo-250x250.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/iainbrighton/Chocolatey-Packages/4ce105a88aa58e64331e3d99ceb6d4ae7b0821a9/Citrix-Receiver/Citrix-Receiver.png</iconUrl>
     <licenseUrl>http://www.citrix.com/buy/licensing/agreements.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Citrix Receiver</tags>
