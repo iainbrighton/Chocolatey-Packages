@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>citrix-xenserver-sdk</id>
+    <title>Citrix XenServer SDK</title>
+    <version>6.2.0</version>
+    <authors>XenServer.org</authors>
+    <owners>Iain Brighton</owners>
+    <description>XenServer is an enterprise-class, cloud-proven, virtualization platform that delivers all of the critical features needed for any server and datacenter virtualization implementation.  The following list summarizes some of the key capabilities of XenServer, and a complete technical FAQ can be found on the Citrix support web site.</description>
+    <projectUrl>http://www.xenserver.org/</projectUrl>
+    <copyright>(c) XenServer.org</copyright>
+    <iconUrl>http://www.xenserver.org/images/logo/logo.png</iconUrl>
+    <licenseUrl>http://www.xenserver.org/overview-xenserver-open-source-virtualization/gplv2-license/13-about-xenserver-open-source/152-eula.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>Citrix XenServer SDK Powershell</tags>
+  </metadata>
+</package>
