@@ -6,6 +6,7 @@
     <version>1.4</version>
     <authors>Virtual Engine</authors>
     <owners>Iain Brighton</owners>
+    <summary>Virtual Engine Toolkit</summary>
     <description>The Virtual Engine Toolkit (VET) is primarily a collection of tools for managing the various components of a user’s Workspace. No matter what your User Environment Management (UEM) tool of choice or desktop delivery mechanism, the Virtual Engine Toolkit can help.</description>
     <projectUrl>http://virtualengine.co.uk/vet/</projectUrl>
     <copyright>(c) Copyright Virtual Engine Limited</copyright>

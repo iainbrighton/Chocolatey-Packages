@@ -2,4 +2,4 @@
 $packageToolsPath = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent;
 $packagePath = Split-Path -Path $packageToolsPath -Parent;
 $bundleFilePath = Join-Path -Path $packagePath -ChildPath 'VET.MSI';
-Install-ChocolateyInstallPackage -PackageName 'VET' -FileType 'MSI' -SilentArgs '/qn /norestart' -File $bundleFilePath;
+Install-ChocolateyInstallPackage -PackageName 'VET' -FileType 'MSI' -SilentArgs '/qn /norestart' -File $bundleFilePath -ValidExitCodes @(0,3010);
