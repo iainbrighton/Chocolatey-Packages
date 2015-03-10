@@ -10,7 +10,7 @@
     <description>Enhancements for Powershell in Visual Studio 2013 including: syntax highlighting with customizable fonts and colors; intellisense for variables, cmdlets and arguments; Powershell project templates; Powershell MSBuild project options; Breakpoint and breakpoint pane support; Stepping; Locals support; Call stack support; Data tips and testing.</description>
     <projectUrl>https://raw.githubusercontent.com/adamdriscoll/poshtools/</projectUrl>
     <copyright>(c) Copyright Adam Driscoll</copyright>
-    <iconUrl>https://raw.githubusercontent.com/mwrock/Chocolatey-Packages/master/VisualStudio2012Ultimate/vs.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/iainbrighton/Chocolatey-Packages/a9c5f2ec20132b01b136018fbbce989426564fc2/PoshTools-VisualStudio2013/powershelltools.png</iconUrl>
     <licenseUrl>https://raw.githubusercontent.com/adamdriscoll/poshtools/dev/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>VisualStudio VS Powershell Tools PoshTools vsix</tags>
