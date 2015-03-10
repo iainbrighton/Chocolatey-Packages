@@ -6,6 +6,7 @@
     <version>6.2.0</version>
     <authors>XenServer.org</authors>
     <owners>Iain Brighton</owners>
+    <summary>Citrix XenServer SDK</summary>
     <description>XenServer is an enterprise-class, cloud-proven, virtualization platform that delivers all of the critical features needed for any server and datacenter virtualization implementation.  The following list summarizes some of the key capabilities of XenServer, and a complete technical FAQ can be found on the Citrix support web site.</description>
     <projectUrl>http://www.xenserver.org/</projectUrl>
     <copyright>(c) XenServer.org</copyright>
