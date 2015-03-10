@@ -2,4 +2,4 @@
 $packageToolsPath = Split-Path -Path $MyInvocation.MyCommand.Definition -Parent;
 $packagePath = Split-Path -Path $packageToolsPath -Parent;
 $bundleFilePath = Join-Path -Path $packagePath -ChildPath 'ACE.MSI';
-Install-ChocolateyInstallPackage -PackageName 'ACE' -FileType 'MSI' -SilentArgs '/qn /norestart' -File $bundleFilePath;
+Install-ChocolateyInstallPackage -PackageName 'ACE' -FileType 'MSI' -SilentArgs '/qn /norestart' -File $bundleFilePath -ValidExitCodes @(0,3010);

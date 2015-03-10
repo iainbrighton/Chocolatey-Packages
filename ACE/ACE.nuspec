@@ -6,6 +6,7 @@
     <version>1.3</version>
     <authors>Virtual Engine</authors>
     <owners>Iain Brighton</owners>
+    <summary>Virtual Engine App-V Configuration Editor.</summary>
     <description>The App-V 5 Configuration Editor (ACE) is part of the Virtual Engine Toolkit that provides an easy way to modify Microsoft Application Virtualization (App-V 5) dynamic configuration files.</description>
     <projectUrl>http://virtualengine.co.uk/ace/</projectUrl>
     <copyright>(c) Copyright Virtual Engine Limited</copyright>
