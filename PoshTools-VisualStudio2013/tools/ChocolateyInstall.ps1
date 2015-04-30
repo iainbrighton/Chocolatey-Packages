@@ -1,2 +1,2 @@
 ﻿## Template VirtualEngine.Build ChocolateyInstall.ps1 file for Visual Studio VSIX deployment
-Install-ChocolateyVsixPackage -PackageName 'PoshTools-VisualStudio2013' -Url 'https://github.com/adamdriscoll/poshtools/releases/download/v1.0.5/PowerShellTools_2013.vsix';
+Install-ChocolateyVsixPackage -PackageName 'PoshTools-VisualStudio2013' -Url 'https://ci.appveyor.com/api/buildjobs/034fcq2p716nq65r/artifacts/Binaries/Release12.0/PowerShellTools.vsix';

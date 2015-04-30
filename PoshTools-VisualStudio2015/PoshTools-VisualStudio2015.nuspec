@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>poshtools-visualstudio2013</id>
-    <title>Powershell Tools for Visual Studio 2013 (VSIX)</title>
+    <id>poshtools-visualstudio2015</id>
+    <title>Powershell Tools for Visual Studio 2015 (VSIX)</title>
     <version>3.0.135</version>
     <authors>Adam Driscoll</authors>
     <owners>Iain Brighton</owners>
-    <summary>Powershell Tools for Visual Studio 2013.</summary>
-    <description>Enhancements for Powershell in Visual Studio 2013 including: syntax highlighting with customizable fonts and colors; intellisense for variables, cmdlets and arguments; Powershell project templates; Powershell MSBuild project options; Breakpoint and breakpoint pane support; Stepping; Locals support; Call stack support; Data tips and testing.</description>
+    <summary>Powershell Tools for Visual Studio 2015.</summary>
+    <description>Enhancements for Powershell in Visual Studio 2015 including: syntax highlighting with customizable fonts and colors; intellisense for variables, cmdlets and arguments; Powershell project templates; Powershell MSBuild project options; Breakpoint and breakpoint pane support; Stepping; Locals support; Call stack support; Data tips and testing.</description>
     <projectUrl>https://raw.githubusercontent.com/adamdriscoll/poshtools/</projectUrl>
     <copyright>(c) Copyright Adam Driscoll</copyright>
     <iconUrl>https://cdn.rawgit.com/iainbrighton/Chocolatey-Packages/a9c5f2ec20132b01b136018fbbce989426564fc2/PoshTools-VisualStudio2013/powershelltools.png</iconUrl>
