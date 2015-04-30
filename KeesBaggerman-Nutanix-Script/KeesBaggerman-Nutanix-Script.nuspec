@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>keesbaggerman-nutanix-script</id>
+    <title>Nutanix Inventory Script</title>
+    <version>1.0</version>
+    <authors>Kees Baggerman</authors>
+    <owners>Iain Brighton</owners>
+    <summary>Nutanix Inventory Script</summary>
+    <description>Nutanix Powershell documentation script.</description>
+    <projectUrl>http://carlwebster.com/where-to-get-copies-of-the-documentation-scripts/</projectUrl>
+    <copyright>(c) Copyright Kees Baggerman</copyright>
+    <tags>Nutanix Documentation Script Powershell</tags>
+  </metadata>
+</package>
