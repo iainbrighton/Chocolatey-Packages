@@ -3,7 +3,7 @@
   <metadata>
     <id>poshtools-visualstudio2013</id>
     <title>Powershell Tools for Visual Studio 2013 (VSIX)</title>
-    <version>3.0.158</version>
+    <version>3.0.163</version>
     <authors>Adam Driscoll</authors>
     <owners>Iain Brighton</owners>
     <summary>Powershell Tools for Visual Studio 2013.</summary>
