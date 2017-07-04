@@ -1,4 +1,4 @@
-## Template VirtualEngine.Build ChocolateyUninstall.ps1 file for MSI installations
+﻿## Template VirtualEngine.Build ChocolateyUninstall.ps1 file for MSI installations
 try {
     Get-CimInstance -Class Win32_Product |
         Where { $_.Name -eq 'Nitro Reader 5' } |
