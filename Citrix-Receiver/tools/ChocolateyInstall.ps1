@@ -5,7 +5,7 @@ $installChocolateyPackageParams = @{
     SilentArgs     = '/noreboot /silent';
     Url            = 'http://downloadplugins.citrix.com/Windows/CitrixReceiver.exe';
     ValidExitCodes = @(0,3010);
-    Checksum       = 'F7A05C9ECA4710667FE388715506E2B39DBE6A1EB7D11071CC00B5FDBBCF4AE4';
+    Checksum       = 'D474E1157E3EED67D5360189E85A318044375B563E9229D68A7D522AB17E3F1A';
     ChecksumType   = 'sha256';
 }
 Install-ChocolateyPackage @installChocolateyPackageParams;
