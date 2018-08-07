@@ -3,9 +3,9 @@ $installChocolateyPackageParams = @{
     PackageName    = 'Citrix-Receiver';
     FileType       = 'EXE';
     SilentArgs     = '/noreboot /silent';
-    Url            = 'http://downloadplugins.citrix.com/Windows/CitrixReceiver.exe';
+    Url            = 'https://downloadplugins.citrix.com/Windows/CitrixReceiver.exe';
     ValidExitCodes = @(0,3010);
-    Checksum       = 'D474E1157E3EED67D5360189E85A318044375B563E9229D68A7D522AB17E3F1A';
+    Checksum       = 'ADB1AFF0625F6EE0C9745F6F8C523398CF3F4732EB3D2CA5966E97AE6D57536F';
     ChecksumType   = 'sha256';
 }
 Install-ChocolateyPackage @installChocolateyPackageParams;
