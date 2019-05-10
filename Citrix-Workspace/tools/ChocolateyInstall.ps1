@@ -2,7 +2,7 @@
 
 $citrixReleaseWebPage = "https://www.citrix.com/downloads/workspace-app/legacy-workspace-app-for-windows/workspace-app-for-windows-1903.html"
 
-$webPageResponse = $response = Invoke-WebRequest $citrixReleaseWebPage
+$response = Invoke-WebRequest $citrixReleaseWebPage
 $relLink = $response.Links | Where-Object { $_.href -eq "#ctx-dl-eula" } | Select rel
 $downloadLink = "http:" + $relLink.rel
 
