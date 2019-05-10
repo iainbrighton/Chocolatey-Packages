@@ -12,7 +12,7 @@ $installChocolateyPackageParams = @{
     SilentArgs     = '/noreboot /silent';
     Url            = '$downloadLink';
     ValidExitCodes = @(0,3010);
-    Checksum       = 'A189E74841E97D776520880C1D1CF5EEB52E536826D1AEA5E42C7163B2468140'; # Update manually
+    Checksum       = '086DBE728BFBA427D1DF28C3A7ADEB072CD3878758084A547879759EE36064B5'; # Update manually
     ChecksumType   = 'sha256';
 }
 Install-ChocolateyPackage @installChocolateyPackageParams;
