@@ -6,6 +6,7 @@
     <version>1.0.3.18</version>
     <authors>Iain Brighton</authors>
     <owners>Iain Brighton</owners>
+    <summary>This Powershell module wraps the native Git output streams so that they play nicely in an interactive PowerShell ISE session.</summary>
     <description>This Powershell module wraps the native Git output streams so that they play nicely in an interactive PowerShell ISE session.</description>
     <projectUrl>https://github.com/iainbrighton/PhatGit</projectUrl>
     <copyright>(c) 2015 Iain Brighton. All rights reserved.</copyright>
