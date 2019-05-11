@@ -1,6 +1,6 @@
 ## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
 
-$releaseUri = 'https://www.citrix.com/downloads/workspace-app/legacy-workspace-app-for-windows/workspace-app-for-windows-1903.html'
+$releaseUri = "https://www.citrix.com/downloads/workspace-app/legacy-workspace-app-for-windows/workspace-app-for-windows-1903.html"
 $downloadLink = 'https:{0}' -f ((Invoke-WebRequest -Uri $releaseUri -UseBasicParsing).Links | Where-Object { $_.href -eq '#ctx-dl-eula' } | Select-Object -ExpandProperty 'rel')
 
 $installChocolateyPackageParams = @{
