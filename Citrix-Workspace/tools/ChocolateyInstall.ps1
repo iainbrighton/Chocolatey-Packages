@@ -1,17 +1,17 @@
 ## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
 
 $releaseUri = 'https://www.citrix.com/downloads/workspace-app/legacy-workspace-app-for-windows/workspace-app-for-windows-1903.html'
-## Kindly borrowed from https://github.com/chocolatey-community/chocolatey-coreteampackages/blob/master/automatic/wps-office-free/update_helper.ps1
-$READYSTATE_READY = 4
-$internetExplorer = New-Object -ComObject InternetExplorer.Application
-$internetExplorer.Navigate2($releaseUri) 
-$internetExplorer.Visible = $false
-while ($internetExplorer.ReadyState -ne $READYSTATE_READY) {
-    Start-Sleep -Seconds 1
-}
-$link = $internetExplorer.Document.getElementsByTagName('a') | Where-Object { $_.href -match '.html#ctx-dl-eula$' } | Select-Object -First 1 
-$downloadUri = 'https:{0}' -f $link.rel
-$internetExplorer.Quit()
+$htmlAgilityPackPath = '{0}\HtmlAgilityPack.dll' -f (Split-Path -Path $MyInvocation.MyCommand.Path)
+$null = [System.Reflection.Assembly]::LoadFrom($htmlAgilityPackPath)
+Write-Host 'Resolving download link..'
+$webResponse = (New-Object -TypeName System.Net.WebClient).DownloadString($releaseUri)
+$htmlDocument = New-Object -TypeName 'HtmlAgilityPack.HtmlDocument'
+$htmlDocument.LoadHtml($webResponse)
+$relativeUri = $htmlDocument.DocumentNode.SelectNodes('//a') |
+    ForEach-Object { $_.Attributes } |
+        Where-Object { $_.Value -match 'CitrixWorkspaceApp.exe' } |
+            Select-Object -ExpandProperty Value
+$downloadUri = 'https:{0}' -f $relativeUri
 
 $installChocolateyPackageParams = @{
     PackageName    = "Citrix-Workspace";
