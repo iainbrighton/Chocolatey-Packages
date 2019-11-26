@@ -2,6 +2,6 @@
 
 <#! PRE-UNINSTALL-TASKS !#>
 
-Uninstall-ChocolateyPackage -PackageName 'Citrix-Workspace' -FileType 'EXE' -SilentArgs '/silent /uninstall /cleanup' -File "$env:ALLUSERSPROFILE\Citrix\Citrix Workspace 1904\TrolleyExpress.exe" -ValidExitCodes @(0,3010);
+Uninstall-ChocolateyPackage -PackageName 'Citrix-Workspace' -FileType 'EXE' -SilentArgs '/silent /uninstall /cleanup' -File "$env:ALLUSERSPROFILE\Citrix\Citrix Workspace 1909\TrolleyExpress.exe" -ValidExitCodes @(0,3010);
 
 <#! POST-UNINSTALL-TASKS !#>

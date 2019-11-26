@@ -1,10 +1,15 @@
 ## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
 
-$citrixWorkspaceAppVersion = '1904.1'
+$citrixWorkspaceAppVersion = '1909'
+
+$webClient = New-Object -TypeName 'System.Net.WebClient'
+$webClient.UseDefaultCredentials = $true
+$webClient.Proxy = [System.Net.WebRequest]::GetSystemWebProxy()
+
 <# Citrix change the download URL after a new version is released. Here we grab the latest download link from the RSS feed. #>
 Write-Host "Resolving Citrix Workspace app $citrixWorkspaceAppVersion download link.."
 $rssFeedUri = 'https://www.citrix.com/content/citrix/en_us/downloads/workspace-app.rss'
-$rssFeedWebResponse = (New-Object -TypeName System.Net.WebClient).DownloadString($rssFeedUri)
+$rssFeedWebResponse = $webClient.DownloadString($rssFeedUri)
 $feed = [System.Xml.XmlDocument] $rssFeedWebResponse
 $releaseUri = $feed.rss.channel.item |
                 Where-Object { $_.Title -eq "New - Citrix Workspace app $citrixWorkspaceAppVersion for Windows" } |
@@ -14,8 +19,10 @@ $htmlAgilityPackPath = '{0}\HtmlAgilityPack.dll' -f (Split-Path -Path $MyInvocat
 $null = [System.Reflection.Assembly]::LoadFrom($htmlAgilityPackPath)
 
 <# Citrix sign the download link via Javascript so we have to parse the page to get the signed download Uri. #>
-Write-Host "Resolving Citrix Workspace app $citrixWorkspaceAppVersion download token.."
-$releaseUriWebResponse = (New-Object -TypeName System.Net.WebClient).DownloadString($releaseUri)
+Write-Host "Retrieving Citrix Workspace app $citrixWorkspaceAppVersion download token..."
+<# Citrix reject the request with "The remote server returned an error: (403) Forbidden" when no user-agent is specified #>
+$webClient.Headers.Add('user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18363')
+$releaseUriWebResponse = $webClient.DownloadString($releaseUri)
 $htmlDocument = New-Object -TypeName 'HtmlAgilityPack.HtmlDocument'
 $htmlDocument.LoadHtml($releaseUriWebResponse)
 $relativeUri = $htmlDocument.DocumentNode.SelectNodes('//a') |
@@ -30,7 +37,7 @@ $installChocolateyPackageParams = @{
     SilentArgs     = "/noreboot /silent";
     Url            = "$downloadUri";
     ValidExitCodes = @(0,3010);
-    Checksum       = "1DA12FCFE95944693C9628C2CF3349102717317D3BFFDEDDF7384087383BA430";
+    Checksum       = "84056DA6674D09DD4861EC1EA7F435282CC469CB90075BD1AC569A4F60F5BF2B";
     ChecksumType   = "sha256";
 }
 Install-ChocolateyPackage @installChocolateyPackageParams;
