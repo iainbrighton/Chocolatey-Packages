@@ -1,7 +1,9 @@
 ## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
 
-<# Citrix change the download URL after a new version is released. Here we grab the latest download link from the RSS feed. #>
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+Import-Module $ScriptDir\CitrixConfig.psm1
 
+<# Citrix change the download URL after a new version is released. Here we grab the latest download link from the RSS feed. #>
 Function Get-RssFeed {
     Begin {
     } 
@@ -16,13 +18,14 @@ Function Get-RssFeed {
     }   
 }
 
-Function Get-LatestRelease {
+Function Get-Release {
     param([Parameter(Mandatory, ValueFromPipeline)][System.Xml.XmlDocument] $feed)
 
     Begin {        
     }
     Process {
-        Write-Host "Resolving latest Citrix Workspace app download link..."
+        $citrixWorkspaceAppVersion = Get-CitrixVersion
+        Write-Host "Resolving Citrix Workspace app download link..."
         $regex = "^(New - )?Citrix Workspace app (?<version>\d+) for Windows"
         $latest = $feed.rss.channel.item | Where-Object { $_.Title -match $regex } | ForEach-Object {    
             $_.Title -match $regex | Out-Null    
@@ -30,9 +33,9 @@ Function Get-LatestRelease {
             $release.Version = $matches["version"]
             $release.Url = $_.link
             $release
-        } | Sort-Object -Property Version -Descending | Select-Object -First 1
+        } | Where-Object { $_.Version -eq $citrixWorkspaceAppVersion } | Select-Object -First 1
         
-        Write-Host -ForegroundColor Green "Latest version found: $($latest.Version)"
+        Write-Host -ForegroundColor Green "Version found: $($latest.Version)"
         $latest
     }
     End {
@@ -48,12 +51,13 @@ Function Get-DownloadUri {
     Begin {        
     }
     Process {        
-        $htmlAgilityPackPath = '{0}\HtmlAgilityPack.dll' -f (Split-Path -Path $MyInvocation.MyCommand.Path)        
+        $htmlAgilityPackPath = '{0}\HtmlAgilityPack.dll' -f (Split-Path -Path $MyInvocation.MyCommand.Path)                
         [System.Reflection.Assembly]::LoadFrom($htmlAgilityPackPath) | Out-Null        
         
         <# Citrix sign the download link via Javascript so we have to parse the page to get the signed download Uri. #>
-        Write-Host "Resolving latest Citrix Workspace app ($($latest.Version)) download token..."
-        $releaseUriWebResponse = (New-Object -TypeName System.Net.WebClient).DownloadString($latest.Url)
+        Write-Host "Resolving Citrix Workspace app ($($Version)) download token..."
+        Write-Host $Url
+        $releaseUriWebResponse = (New-Object -TypeName System.Net.WebClient).DownloadString($Url)
         $htmlDocument = New-Object -TypeName 'HtmlAgilityPack.HtmlDocument'
         $htmlDocument.LoadHtml($releaseUriWebResponse)
         $relativeUri = $htmlDocument.DocumentNode.SelectNodes('//a') |
@@ -90,7 +94,7 @@ Function Get-ChocolateyPackageParams {
     }
 }
 
-$installChocolateyPackageParams = Get-RssFeed | Get-LatestRelease | Get-DownloadUri | Get-ChocolateyPackageParams
+$installChocolateyPackageParams = Get-RssFeed | Get-Release | Get-DownloadUri | Get-ChocolateyPackageParams
 Install-ChocolateyPackage @installChocolateyPackageParams;
 
 <#! POST-INSTALL-TASKS !#>
