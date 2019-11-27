@@ -15,6 +15,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Citrix Receiver Workspace WorkspaceApp Admin</tags>
     <packageSourceUrl>https://github.com/iainbrighton/Chocolatey-Packages/tree/master/Citrix-Workspace</packageSourceUrl>
-    <releaseNotes>The download link points to the latest version - not a specific package version.</releaseNotes>
+    <releaseNotes>The download link points to the specified version.</releaseNotes>
   </metadata>
 </package>
