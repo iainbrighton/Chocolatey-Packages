@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>citrix-workspace</id>
-    <title>Citrix Workspace</title>
-    <version>20.10.0.20</version>
+    <id>citrix-workspace-ltsr</id>
+    <title>Citrix Workspace LTSR</title>
+    <version>19.12.1001.3</version>
     <authors>Citrix Systems Inc.</authors>
     <owners>Iain Brighton</owners>
-    <summary>Citrix Workspace</summary>
+    <summary>Citrix Workspace LTSR</summary>
     <description>High performance access to Windows virtual apps and desktops. Configure for anywhere access from your desktop or web access with Chrome, Internet Explorer or Firefox. For domain and non-domain joined PCs, tablets, and thin clients. Provides high performance use of virtualized Microsoft Lync, 3DPro engineering apps, local app access.</description>
     <projectUrl>https://www.citrix.com/downloads/workspace-app/windows/</projectUrl>
     <copyright>(c) Copyright Citrix Systems, Inc.</copyright>
