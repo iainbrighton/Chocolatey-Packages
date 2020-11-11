@@ -35,7 +35,7 @@ $downloadUri = 'https:{0}' -f $relativeUri
 $installChocolateyPackageParams = @{
     PackageName    = "Citrix-Workspace";
     FileType       = "EXE";
-    SilentArgs     = "/noreboot /silent";
+    SilentArgs     = "/noreboot /silent /AutoUpdateCheck=disabled";
     Url            = "$downloadUri";
     ValidExitCodes = @(0,3010);
     Checksum       = "420c0c05fff7a54871a80fd237ee9d42c8b7a557ca856c0fb560d463aea74f33";
