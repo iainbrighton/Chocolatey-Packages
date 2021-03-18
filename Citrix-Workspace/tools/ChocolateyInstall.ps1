@@ -1,6 +1,6 @@
 ## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
 
-$citrixWorkspaceAppVersion = '2010'
+$citrixWorkspaceAppVersion = '2102'
 
 $webClient = New-Object -TypeName 'System.Net.WebClient'
 $webClient.Headers.Add('user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18363')
@@ -38,7 +38,7 @@ $installChocolateyPackageParams = @{
     SilentArgs     = "/noreboot /silent /AutoUpdateCheck=disabled";
     Url            = "$downloadUri";
     ValidExitCodes = @(0,3010);
-    Checksum       = "420c0c05fff7a54871a80fd237ee9d42c8b7a557ca856c0fb560d463aea74f33";
+    Checksum       = "49a19bbb688912feaa5fa0300f808bf92230522bd5991b20b1fc7589d1bceb8c";
     ChecksumType   = "sha256";
 }
 Install-ChocolateyPackage @installChocolateyPackageParams;

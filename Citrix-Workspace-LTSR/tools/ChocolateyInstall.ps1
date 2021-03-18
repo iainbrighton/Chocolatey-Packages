@@ -1,6 +1,6 @@
 ## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
 
-$citrixWorkspaceAppVersion = '19.12.1001'
+$citrixWorkspaceAppVersion = '19.12.3000'
 
 $webClient = New-Object -TypeName 'System.Net.WebClient'
 $webClient.Headers.Add('user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18363')
@@ -35,10 +35,10 @@ $downloadUri = 'https:{0}' -f $relativeUri
 $installChocolateyPackageParams = @{
     PackageName    = "Citrix-Workspace-LTSR";
     FileType       = "EXE";
-    SilentArgs     = "/noreboot /silent";
+    SilentArgs     = "/noreboot /silent /AutoUpdateCheck=disabled";
     Url            = "$downloadUri";
     ValidExitCodes = @(0,3010);
-    Checksum       = "38A17488D33A8CA51FDCA359678C3CF96138A462DC10551246A06EBD91B89307";
+    Checksum       = "9fd0e95e29572e62a74c6ffea2f4a6f8d99ba45c88386bda22637631e9863db8";
     ChecksumType   = "sha256";
 }
 Install-ChocolateyPackage @installChocolateyPackageParams;
