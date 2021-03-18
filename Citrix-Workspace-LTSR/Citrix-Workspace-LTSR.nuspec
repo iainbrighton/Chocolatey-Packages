@@ -10,14 +10,13 @@
     <description>High performance access to Windows virtual apps and desktops. Configure for anywhere access from your desktop or web access with Chrome, Internet Explorer or Firefox. For domain and non-domain joined PCs, tablets, and thin clients. Provides high performance use of virtualized Microsoft Lync, 3DPro engineering apps, local app access.</description>
     <projectUrl>https://www.citrix.com/downloads/workspace-app/windows/</projectUrl>
     <copyright>(c) Copyright Citrix Systems, Inc.</copyright>
-    <iconUrl>https://github.com/iainbrighton/Chocolatey-Packages/raw/master/Citrix-Workspace/Citrix-Workspace.png</iconUrl>
+    <iconUrl>https://github.com/iainbrighton/Chocolatey-Packages/raw/master/Citrix-Workspace-LTSR/Citrix-Workspace.png</iconUrl>
     <licenseUrl>https://www.citrix.com/buy/licensing/agreements.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>Citrix Receiver Workspace WorkspaceApp Admin</tags>
+    <tags>Citrix Receiver Workspace WorkspaceApp Admin LTSR</tags>
     <dependencies>
       <dependency id="dotnet4.6.2" />
     </dependencies>
-    <packageSourceUrl>https://github.com/iainbrighton/Chocolatey-Packages/tree/master/Citrix-Workspace</packageSourceUrl>
-    <releaseNotes>The download link points to the latest version - not a specific package version.</releaseNotes>
+    <packageSourceUrl>https://github.com/iainbrighton/Chocolatey-Packages/tree/master/Citrix-Workspace-LTSR</packageSourceUrl>
   </metadata>
 </package>
