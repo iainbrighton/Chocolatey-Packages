@@ -1,7 +1,0 @@
-﻿
-VERIFICATION
-Verification is intended to assist the Chocolatey moderators and community
-in verifying that this package's contents are trustworthy.
-
-Nuget package:   https://www.nuget.org/packages/HtmlAgilityPack/1.11.4
-SHA256 checksum: 07E1E38F7CB400E145D5A67D4924627F1BD156808CB68A1B5886A4C201AB6257
