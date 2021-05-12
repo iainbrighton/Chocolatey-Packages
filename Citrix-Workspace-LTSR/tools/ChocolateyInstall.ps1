@@ -1,4 +1,4 @@
-﻿## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
+## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
 
 <#! PRE-INSTALL-TASKS !#>
 
@@ -6,9 +6,9 @@ $installChocolateyPackageParams = @{
     PackageName    = "Citrix-Workspace-LTSR";
     FileType       = "EXE";
     SilentArgs     = "/noreboot /silent /AutoUpdateCheck=disabled";
-    Url            = "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Win/CitrixWorkspaceApp19.12.3000.6.exe";
+    Url            = "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Win/CitrixWorkspaceApp19.12.4000.19.exe";
     ValidExitCodes = @(0,3010);
-    Checksum       = "9fd0e95e29572e62a74c6ffea2f4a6f8d99ba45c88386bda22637631e9863db8";
+    Checksum       = "895603ab969a73e242d38e0d5b7ee9b379f3a6a20d9c972874a29f890679ea8b";
     ChecksumType   = "sha256";
 }
 Install-ChocolateyPackage @installChocolateyPackageParams;
