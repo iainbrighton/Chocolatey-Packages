@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Citrix Receiver Workspace WorkspaceApp Admin LTSR</tags>
     <dependencies>
-      <dependency id="dotnet4.6.2" />
+      <dependency id="netfx-4.6.2" />
     </dependencies>
     <packageSourceUrl>https://github.com/iainbrighton/Chocolatey-Packages/tree/master/Citrix-Workspace-LTSR</packageSourceUrl>
   </metadata>
