@@ -3,7 +3,7 @@
   <metadata>
     <id>citrix-workspace</id>
     <title>Citrix Workspace</title>
-    <version>21.12.1.4030</version>
+    <version>22.2.0.4525</version>
     <authors>Citrix Systems Inc.</authors>
     <owners>Iain Brighton</owners>
     <summary>Citrix Workspace</summary>
@@ -15,7 +15,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Citrix Receiver Workspace WorkspaceApp Admin</tags>
     <dependencies>
-      <dependency id="dotnet4.6.2" />
+      <dependency id="netfx-4.8" />
+      <dependency id="vcredist140" />
     </dependencies>
     <packageSourceUrl>https://github.com/iainbrighton/Chocolatey-Packages/tree/master/Citrix-Workspace</packageSourceUrl>
   </metadata>
