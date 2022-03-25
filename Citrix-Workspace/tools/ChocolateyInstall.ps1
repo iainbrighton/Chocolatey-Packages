@@ -1,4 +1,4 @@
-## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
+﻿## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
 
 <#! PRE-INSTALL-TASKS !#>
 

@@ -1,4 +1,4 @@
-## Template VirtualEngine.Build ChocolateyUninstall.ps1 file for EXE installations
+﻿## Template VirtualEngine.Build ChocolateyUninstall.ps1 file for EXE installations
 
 <#! PRE-UNINSTALL-TASKS !#>
 
