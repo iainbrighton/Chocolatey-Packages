@@ -1,5 +1,27 @@
 ﻿## Template VirtualEngine.Build ChocolateyInstall.ps1 file for EXE/MSI installations
+function Test-ChocolateyPackageInstalled {
+    Param (
+        [ValidateNotNullOrEmpty()]
+        [string]
+        $Package
+    )
 
+    Process {
+        if (Test-Path -Path $env:ChocolateyInstall) {
+            $packageInstalled = Test-Path -Path $env:ChocolateyInstall\lib\$Package
+        }
+        else {
+            throw "Can't find a chocolatey install directory..."
+        }
+
+        return $packageInstalled
+    }
+}
+
+If (Test-ChocolateyPackageInstalled -Package "citrix-workspace")
+{
+    throw "Citrix Workspace CR already installed. Aborting Citrix Workspace LTSR install"
+}
 <#! PRE-INSTALL-TASKS !#>
 
 $installChocolateyPackageParams = @{
