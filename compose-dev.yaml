@@ -1,7 +1,6 @@
 services:
   app:
-    build:
-      dockerfile: ./_devenv/Dockerfile
+    image: chocolatey/choco:latest
     entrypoint:
     - sleep
     - infinity
