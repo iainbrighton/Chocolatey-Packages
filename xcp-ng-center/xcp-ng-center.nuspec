@@ -4,12 +4,12 @@
     <id>xcp-ng-center</id>
     <version>20.04.01.33</version>
     <owners>Martin Nygaard Jensen</owners>
-    <title>xcp-ng-center (Install)</title>
+    <title>XCP-ng Center</title>
     <authors>XCP-ng</authors>
     <projectUrl>https://github.com/xcp-ng/xenadmin</projectUrl>
     <licenseUrl>https://github.com/xcp-ng/xenadmin/blob/development/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/xcp-ng-center</projectSourceUrl>
+    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/xcp-ng-center</packageSourceUrl>
     <docsUrl>https://github.com/xcp-ng/xenadmin#readme</docsUrl>
     <bugTrackerUrl>https://github.com/xcp-ng/xenadmin/issues</bugTrackerUrl>
     <tags>xcpng xenadmin xenconsole</tags>
