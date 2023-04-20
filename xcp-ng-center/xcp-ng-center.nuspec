@@ -11,11 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/xcp-ng-center</packageSourceUrl>
     <docsUrl>https://github.com/xcp-ng/xenadmin#readme</docsUrl>
-<<<<<<< HEAD
     <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/693a6df836bb368ceb3a3bf45bafe8b63b2d928e/xcp-ng-center/AppIcon.ico?min=1</iconUrl>
-=======
-    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/693a6df836bb368ceb3a3bf45bafe8b63b2d928e/xcp-ng-center/AppIcon.ico?min=1</iconURL>
->>>>>>> 86cbc011a088e06d32db7d810a50cdcd7d20936a
     <bugTrackerUrl>https://github.com/xcp-ng/xenadmin/issues</bugTrackerUrl>
     <tags>xcpng xenadmin xenconsole</tags>
     <summary>XCP-ng Center</summary>
