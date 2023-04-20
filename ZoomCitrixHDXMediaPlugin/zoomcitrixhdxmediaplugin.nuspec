@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>zoomcitrixhdxmediaplugin</id>
+    <version>5.14.0.23370</version>
+    <owners>Martin Nygaard Jensen</owners>
+    <title>Zoom Citrix HDX Media Plugin</title>
+    <authors>Zoom Video Communications, Inc</authors>
+    <projectUrl>https://zoom.us</projectUrl>
+    <licenseUrl>https://explore.zoom.us/en/eula-terms-of-service/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/ZoomCitrixHDXMediaPlugin</packageSourceUrl>
+    <docsUrl>https://support.zoom.us/hc/en-us/sections/4404192199053-Virtual-Desktop-Infrastructure-VDI-</docsUrl>
+    <tags>zoom zoomcitrixhdxmediaplugin hdxplugin</tags>
+    <summary>Zoom Citrix HDX Media Plugin</summary>
+    <description>Zoom Citrix HDX Media Plugin
+Used for optimizing Zoom calls when run in a Citrix VDI solution. This component is installed on the client and requires Citrix Workspace App
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
+    <releaseNotes>https://support.zoom.us/hc/en-us/articles/14633119603469</releaseNotes>
+    <dependencies>
+      <dependency id="citrix-workspace" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
