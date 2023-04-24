@@ -21,7 +21,7 @@
         https://www.hexcore.xyz/
     </summary>
     <language>en-US</language>
-    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/ObinsKit_chocolatey</packageSourceUrl>
+    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/ObinsKit</packageSourceUrl>
     <tags>obins keyboard utility obinskit obinslab hexcore</tags>
   </metadata>
   <files>
