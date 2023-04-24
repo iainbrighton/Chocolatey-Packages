@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ObinsKit</id>
+    <version>1.2.11</version>
+    <title>ObinsKit</title>
+    <authors>Hexcore</authors>
+    <owners>Martin Nygaard Jensen</owners>
+    <projectUrl>https://www.hexcore.xyz/obinskit</projectUrl>
+    <iconUrl>https://cdn.statically.io/img/i.imgur.com/g0QsOpd.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ObinsKit is a software for Anne Pro keyboards</description>
+    <releaseNotes>https://www.hexcore.xyz/obinskit/releases</releaseNotes>
+    <docsUrl>https://service.hexcore.xyz/manual/obinskit</docsUrl>
+    <summary>
+      Official utility for configuring parameters for ObinLab keyboards:
+        - ANNE CLASSIC D87 RGB
+        - ANNE PRO 2
+        - ANNE PRO
+
+        https://www.hexcore.xyz/
+    </summary>
+    <language>en-US</language>
+    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/ObinsKit_chocolatey</packageSourceUrl>
+    <tags>obins keyboard utility obinskit obinslab hexcore</tags>
+  </metadata>
+  <files>
+    <file src="tools\*.ps1" target="tools"/>
+  </files>
+</package>
