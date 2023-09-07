@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>zoom-vdi-universal-plugin</id>
+    <version>5.15.4.23940</version>
+    <owners>Martin Nygaard Jensen</owners>
+    <title>Zoom VDI Universal Plugin</title>
+    <authors>Zoom Video Communications, Inc</authors>
+    <projectUrl>https://zoom.us</projectUrl>
+    <licenseUrl>https://explore.zoom.us/en/eula-terms-of-service/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/zoom-vdi-universal-plugin</packageSourceUrl>
+    <docsUrl>https://support.zoom.us/hc/en-us/sections/4404192199053-Virtual-Desktop-Infrastructure-VDI-</docsUrl>
+    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/3807fb4c10f7834e6c370c90a723eaea4ea1e4e7/ZoomCitrixHDXMediaPlugin/Zoom.png?min=1</iconUrl>
+    <tags>zoom hdxplugin</tags>
+    <summary>Zoom VDI Universal Plugin</summary>
+    <description>Zoom VDI Universal Plugin
+Used for optimizing Zoom calls when run in a VDI solution. This component is installed on the client and requires VDI clients to be already installed for correct detection.
+</description>
+    <releaseNotes>https://support.zoom.us/hc/en-us/articles/360031768011-Release-notes-for-Virtual-Desktop-Infrastructure-VDI-</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
