@@ -9,7 +9,7 @@
     <projectUrl>https://zoom.us</projectUrl>
     <licenseUrl>https://explore.zoom.us/en/eula-terms-of-service/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/zoom-vdi-universal-plugin</packageSourceUrl>
+    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/Zoom-VDI-Universal-Plugin</packageSourceUrl>
     <docsUrl>https://support.zoom.us/hc/en-us/sections/4404192199053-Virtual-Desktop-Infrastructure-VDI-</docsUrl>
     <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/730f42afe1ea9002e9b92bfaf7625e129a1db079/Zoom-VDI-Universal-Plugin/Zoom.png?min=1</iconUrl>
     <tags>zoom hdxplugin</tags>
