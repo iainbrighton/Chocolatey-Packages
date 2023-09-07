@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/zoom-vdi-universal-plugin</packageSourceUrl>
     <docsUrl>https://support.zoom.us/hc/en-us/sections/4404192199053-Virtual-Desktop-Infrastructure-VDI-</docsUrl>
-    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/3807fb4c10f7834e6c370c90a723eaea4ea1e4e7/ZoomCitrixHDXMediaPlugin/Zoom.png?min=1</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/577be4f59ca8ada6af432c2bb59202532614ec09/Zoom-VDI-Universal-Plugin/Zoom.png?min=1</iconUrl>
     <tags>zoom hdxplugin</tags>
     <summary>Zoom VDI Universal Plugin</summary>
     <description>Zoom VDI Universal Plugin
