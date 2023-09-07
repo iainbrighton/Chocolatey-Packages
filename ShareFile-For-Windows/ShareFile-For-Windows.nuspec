@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sharefile-for-windows</id>
+    <version>23.7.12.0</version>
+    <owners>Martin Nygaard Jensen</owners>
+    <title>ShareFile For Windows</title>
+    <authors>ShareFile</authors>
+    <projectUrl>https://sharefile.com</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://www.citrix.com/downloads/sharefile/clients-and-plug-ins/citrix-files-for-windows.html</packageSourceUrl>
+    <docsUrl>https://docs.sharefile.com/</docsUrl>
+    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/730f42afe1ea9002e9b92bfaf7625e129a1db079/ShareFile-For-Windows/sharefile.png?min=1</iconUrl>
+    <tags>sharefile citrixfiles</tags>
+    <summary>ShareFile For Windows</summary>
+    <description>ShareFile For Windows
+
+</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
