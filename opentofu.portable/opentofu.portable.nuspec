@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>opentofu.portable</id>
+    <version>1.6.0-beta2</version>
+    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/opentofu.portable</packageSourceUrl>
+    <owners>Martin Nygaard Jensen</owners>
+    <title>opentofu (Portable)</title>
+    <authors>Linux Foundation</authors>
+    <projectUrl>https://opentofu.org/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/opentofu/brand-artifacts/a87850e945d8f4b3f88d5ad2273b8d4ded0603f0/symbol-only/transparent/PNG/on-light.png?min=1</iconUrl>
+    <licenseUrl>https://github.com/opentofu/opentofu/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/opentofu/opentofu</projectSourceUrl>
+    <docsUrl>https://opentofu.org/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/opentofu/opentofu/issues</bugTrackerUrl>
+    <tags>opentofu terraform</tags>
+    <summary>opentofu is an open source fork of Terraform</summary>
+    <description>__REPLACE__MarkDown_Okay </description>
+    <releaseNotes>https://github.com/opentofu/opentofu/blob/d38fdb69aac6dc73d5023cce100ed3208002157a/CHANGELOG.md#160-unreleased</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
