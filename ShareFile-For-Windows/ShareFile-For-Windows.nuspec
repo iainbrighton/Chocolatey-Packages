@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sharefile-for-windows</id>
-    <version>23.7.12.0</version>
+    <version>23.10.16.0</version>
     <owners>Martin Nygaard Jensen</owners>
     <title>ShareFile For Windows</title>
     <authors>ShareFile</authors>
@@ -13,9 +13,10 @@
     <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/dd257850f72d1f205febd56c68e6b8eb20e062d9/ShareFile-For-Windows/sharefile.png?min=1</iconUrl>
     <tags>sharefile citrixfiles</tags>
     <summary>ShareFile For Windows</summary>
-    <description>ShareFile For Windows
+    <description>*ShareFile For Windows*
+ShareFile is a file sharing service that enables users to easily and securely exchange documents. 
 
-ShareFile client for Windows. 
+ShareFile for Windows allows you to access your files directly through a mapped drive. ShareFile provides a native Windows Explorer experience. Files are downloaded only when accessed and temporarily stored on your computer. Changes made to the files are automatically saved back to the cloud.
 
 *Requires a ShareFile account to use.
 </description>
