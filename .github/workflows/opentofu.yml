@@ -3,6 +3,7 @@ on:
   workflow_run:
     workflows: [opentofu test]
     types: [completed]
+run-name: ${{ github.event.workflow_run.name }}
 
 jobs:
   on-success:
