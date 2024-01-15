@@ -1,26 +1,34 @@
 name: opentofu publish
 on:
-  workflow_run:
-    workflows: [opentofu test]
-    types: [completed]
-run-name: ${{ github.event.workflow_run.name }}
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'opentofu.portable/**'
 
 jobs:
-  on-success:
+  Test-opentofu-Package:
     runs-on: windows-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: 📦 Pack Chocolatey Package
+        run: choco pack opentofu.portable/opentofu.portable.nuspec
+      - name: 🚀 Install Chocolatey Package
+        run: choco install opentofu.portable -y --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"
+      - name: 🚨 Test opentofu
+        run: tofu version
+  Publish-opentofu-Package:
+    runs-on: windows-latest
+    needs: Test-opentofu-Package
     steps:
       - run: echo 'The triggering workflow passed'
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: 📦 Pack Chocolatey Package
-        run: choco pack opentofu.portable/opentofu.portable.nuspec --version 1.6.0
+        run: choco pack opentofu.portable/opentofu.portable.nuspec
       - name: 🔐 Set Chocolatey API-KEY
         run: choco apikey --api-key ${{ secrets.API_KEY }} -source https://push.chocolatey.org/
       - name: 🚀 Push Chocolatey Package
         run: choco push -source https://push.chocolatey.org/
-  on-failure:
-    runs-on: windows-latest
-    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
-    steps:
-      - run: echo 'The triggering workflow failed'
