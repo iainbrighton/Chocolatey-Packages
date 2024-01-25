@@ -1,0 +1,31 @@
+name: Citrix Enterprise Browser publish
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'Citrix-Enterprise-Browser/**'
+
+jobs:
+  Test-CEB-Package:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: 📦 Pack Chocolatey Package
+        run: choco pack Citrix-Enterprise-Browser/Citrix-Enterprise-Browser.nuspec
+      - name: 🚀 Install Chocolatey Package
+        run: choco install citrix-enterprise-browser -y --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"
+  Publish-CEB-Package:
+    runs-on: windows-latest
+    needs: Test-CEB-Package
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: 📦 Pack Chocolatey Package
+        run: choco pack Citrix-Enterprise-Browser/Citrix-Enterprise-Browser.nuspec
+      - name: 🔐 Set Chocolatey API-KEY
+        run: choco apikey --api-key ${{ secrets.API_KEY }} -source https://push.chocolatey.org/
+      - name: 🚀 Push Chocolatey Package
+        run: choco push -source https://push.chocolatey.org/

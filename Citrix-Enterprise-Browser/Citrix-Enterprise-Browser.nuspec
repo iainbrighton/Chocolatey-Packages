@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>citrix-enterprise-browser</id>
+    <title>Citrix Enterprise Browser</title>
+    <version>120.1.1.13</version>
+    <authors>Citrix Systems Inc.</authors>
+    <owners>Martin Nygaard Jensen</owners>
+    <summary>Citrix Enterprise Browser</summary>
+    <description>The Citrix Enterprise Browser (formerly Citrix Workspace Browser) brings you an enhanced and more native-like browser experience and supports the following features:
+
+**VPN-less access to internal web pages** – Access internal web apps without relying on a VPN.
+
+**Tabs and multiple windows** – Open multiple tabs and windows and easily switch between them. Every new web or SaaS app that you open in the Workspace app appear in a new tab in the Enterprise Browser. If many tabs are opened, the Enterprise Browser allows you to group similar tabs. You can also pin tabs in the browser window for easy access in the future. To open a tab it in a new window, simply drag the tab out of your current browser window.
+
+**Progressive Web Apps (PWA)** – PWAs are apps that are installed on your device and provide a near app-like experience on your desktop. It’s a lightweight app that loads faster as it uses data cached from your previous interactions with the app. To install a PWA, simply visit a website that is available as a PWA. The Install icon appears next to the Bookmark this tab icon in the address bar as a prompt, if a PWA is available for that website.
+
+All the installed PWAs are available in the Applications > CWA Browser Apps.
+
+When you open a PWA, you’re prompted to authenticate to the Workspace app if you aren’t already signed in to the Workspace app.
+
+**Editable omnibox** – Use the omnibox (address bar), at the top of the browser window to enter URLs or do search operations. The default search engine is Google.
+
+**Bookmarks** - Add frequently visited webpages to bookmarks for easy access in the future. You can import your bookmarks from other browsers, however, you can’t export your bookmarks from the Citrix Enterprise Browser.
+
+**Dark mode** – Dark mode is applied to the Enterprise Browser only if the theme is already enabled on your system.
+
+**Microphone and webcam support** - Support for audio and video conferencing through various platforms. The following video conferencing solutions are supported:
+Microsoft Teams
+Google Meet (Screen sharing isn’t supported)
+Zoom
+GoToMeeting
+Cisco Webex
+
+**Proxy authentication** – Support for one-time authentication if your organization has configured a proxy server and the credentials are stored in the Windows Credentials Manager. After you sign in to the Workspace app for Windows and start a SaaS app, the app opens in the Enterprise Browser. You don’t have to authentication again as the Workspace app reads your credentials from the Windows Credentials Manager. You must authenticate again if your organization has configured other proxy servers for which the Workspace app isn’t able to find credentials in the Windows credentials manager. In all other scenarios, the browser prompts you for authentication. The credentials you provide is cached in the memory until you close the browser window. Proxy authentication isn’t supported on macOS.
+
+**Analytics** – If the Citrix Analytics Service is configured, admins can gather information about user behavior and other security insights. For more information about Citrix Analytics, see Getting started section in the Citrix Analytics documentation.</description>
+    <projectUrl>https://www.citrix.com/downloads/workspace-app/citrix-enterprise-browser-for-windows/</projectUrl>
+    <copyright>(c) Copyright Citrix Systems, Inc.</copyright>
+    <iconUrl>https://github.com/ravager-dk/Chocolatey-Packages/raw/master/citrix-enterprise-browser/cwa-embedded-browser-icon.png</iconUrl>
+    <licenseUrl>https://www.citrix.com/buy/licensing/agreements.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>Citrix CEB EnterpriseBrowser Browser</tags>
+    <dependencies>
+      <dependency id="citrix-workspace" version="23.11" />
+    </dependencies>
+    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/citrix-enterprise-browser</packageSourceUrl>
+  </metadata>
+</package>
