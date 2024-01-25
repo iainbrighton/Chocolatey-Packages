@@ -1,0 +1,31 @@
+name: Zoom VDI client publish
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'Zoom-VDI-Client/**'
+
+jobs:
+  Test-zoom-Package:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: 📦 Pack Chocolatey Package
+        run: choco pack Zoom-VDI-Client/zoom-vdi-client.nuspec
+      - name: 🚀 Install Chocolatey Package
+        run: choco install zoom-vdi-client -y --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"
+  Publish-zoom-Package:
+    runs-on: windows-latest
+    needs: Test-zoom-Package
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: 📦 Pack Chocolatey Package
+        run: choco pack Zoom-VDI-Client/zoom-vdi-client.nuspec
+      - name: 🔐 Set Chocolatey API-KEY
+        run: choco apikey --api-key ${{ secrets.API_KEY }} -source https://push.chocolatey.org/
+      - name: 🚀 Push Chocolatey Package
+        run: choco push -source https://push.chocolatey.org/
