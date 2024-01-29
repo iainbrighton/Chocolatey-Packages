@@ -5,7 +5,7 @@
     <version>1.6.1</version>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/opentofu.portable</packageSourceUrl>
     <owners>Martin Nygaard Jensen</owners>
-    <title>opentofu (Portable)</title>
+    <title>OpenTofu (Portable)</title>
     <authors>Linux Foundation</authors>
     <projectUrl>https://opentofu.org/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/opentofu/brand-artifacts/a87850e945d8f4b3f88d5ad2273b8d4ded0603f0/symbol-only/transparent/PNG/on-light.png?min=1</iconUrl>
