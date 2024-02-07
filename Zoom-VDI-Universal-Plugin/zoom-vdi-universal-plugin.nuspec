@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zoom-vdi-universal-plugin</id>
-    <version>5.16.12.24610</version>
+    <version>5.16.13.24615</version>
     <owners>Martin Nygaard Jensen</owners>
     <title>Zoom VDI Universal Plugin</title>
     <authors>Zoom Video Communications, Inc</authors>
