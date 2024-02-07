@@ -37,13 +37,13 @@ Cisco Webex
 **Analytics** – If the Citrix Analytics Service is configured, admins can gather information about user behavior and other security insights. For more information about Citrix Analytics, see Getting started section in the Citrix Analytics documentation.</description>
     <projectUrl>https://www.citrix.com/downloads/workspace-app/citrix-enterprise-browser-for-windows/</projectUrl>
     <copyright>(c) Copyright Citrix Systems, Inc.</copyright>
-    <iconUrl>https://github.com/ravager-dk/Chocolatey-Packages/raw/master/citrix-enterprise-browser/cwa-embedded-browser-icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/783bfa717c2eb12bc599cac2c21f7d22c696847b/Citrix-Enterprise-Browser/cwa-embedded-browser-icon.png?min=1</iconUrl>
     <licenseUrl>https://www.citrix.com/buy/licensing/agreements.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Citrix CEB EnterpriseBrowser Browser</tags>
     <dependencies>
       <dependency id="citrix-workspace" version="23.11" />
     </dependencies>
-    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/citrix-enterprise-browser</packageSourceUrl>
+    <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/Citrix-Enterprise-Browser</packageSourceUrl>
   </metadata>
 </package>
