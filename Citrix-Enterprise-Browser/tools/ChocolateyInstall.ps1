@@ -10,6 +10,15 @@ $ChecksumType = "sha256";
 $sourcePrime = "https://www.citrix.com/downloads/workspace-app/citrix-enterprise-browser-for-windows/"
 $responsePrime = Invoke-WebRequest $sourcePrime
 $Link = ($responsePrime.Links | where outerHTML -like "*>Citrix Enterprise Browser v$version*").href
+if ($null -eq $Link){
+    $sourcePrime = "https://www.citrix.com/downloads/workspace-app/earlier-versions-of-citrix-enterprise-browser-for-windows/"
+    $responsePrime = Invoke-WebRequest $sourcePrime
+    $Link = ($responsePrime.Links | where outerHTML -like "*>Citrix Enterprise Browser v$version*").href
+}
+if ($null -eq $Link)
+{
+    throw [System.Net.WebException] "Download URL for version not found"
+}
 $SourceUrl = "https://www.citrix.com$Link"
 
 #Get downloadlink
