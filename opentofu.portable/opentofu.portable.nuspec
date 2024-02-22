@@ -2,10 +2,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>opentofu.portable</id>
-    <version>1.6.1</version>
+    <version>1.6.2</version>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/opentofu.portable</packageSourceUrl>
     <owners>Martin Nygaard Jensen</owners>
-    <title>opentofu (Portable)</title>
+    <title>OpenTofu (Portable)</title>
     <authors>Linux Foundation</authors>
     <projectUrl>https://opentofu.org/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/opentofu/brand-artifacts/a87850e945d8f4b3f88d5ad2273b8d4ded0603f0/symbol-only/transparent/PNG/on-light.png?min=1</iconUrl>
@@ -22,7 +22,7 @@ The key features of OpenTofu are:
 - **Execution Plans:** OpenTofu has a "planning" step where it generates an execution plan. The execution plan shows what OpenTofu will do when you call apply. This lets you avoid any surprises when OpenTofu manipulates infrastructure.
 - **Resource Graph:** OpenTofu builds a graph of all your resources, and parallelizes the creation and modification of any non-dependent resources. Because of this, OpenTofu builds infrastructure as efficiently as possible, and operators get insight into dependencies in their infrastructure.
 - **Change Automation:** Complex changesets can be applied to your infrastructure with minimal human interaction. With the previously mentioned execution plan and resource graph, you know exactly what OpenTofu will change and in what order, avoiding many possible human errors.</description>
-    <releaseNotes>https://github.com/opentofu/opentofu/blob/v1.6/CHANGELOG.md#161</releaseNotes>
+    <releaseNotes>https://github.com/opentofu/opentofu/blob/v1.6/CHANGELOG.md#162</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
