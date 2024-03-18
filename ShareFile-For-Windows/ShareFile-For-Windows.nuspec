@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sharefile-for-windows</id>
-    <version>24.1.26.0</version>
+    <version>24.2.2.0</version>
     <owners>Martin Nygaard Jensen</owners>
     <title>ShareFile For Windows</title>
     <authors>ShareFile</authors>
@@ -10,7 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/ShareFile-For-Windows</packageSourceUrl>
     <docsUrl>https://docs.sharefile.com/</docsUrl>
-    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/dd257850f72d1f205febd56c68e6b8eb20e062d9/ShareFile-For-Windows/sharefile.png?min=1</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/dd257850f72d1f205febd56c68e6b8eb20e062d9/ShareFile-For-Windows/sharefile.png</iconUrl>
     <tags>sharefile citrixfiles</tags>
     <summary>ShareFile For Windows</summary>
     <description>*ShareFile For Windows*
@@ -20,9 +20,9 @@ ShareFile for Windows allows you to access your files directly through a mapped 
 
 *Requires a ShareFile account to use.
 </description>
-<releaseNotes>https://docs.sharefile.com/en-us/sharefile/whats-new#january-9-2024</releaseNotes>
+<releaseNotes>https://docs.sharefile.com/en-us/sharefile/whats-new#february-28-2024</releaseNotes>
     <dependencies>
-      <dependency id="netfx-4.7.1" />
+      <dependency id="netfx-4.7.1" version="4.7.1.0" />
     </dependencies>
   </metadata>
   <files>
