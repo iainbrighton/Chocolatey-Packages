@@ -1,0 +1,21 @@
+name: Zoom VDI client test
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'Zoom-VDI-Client/**'
+
+jobs:
+  Test-zoom-Package:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: 🦺 Install validation extension
+        run: choco install chocolatey-community-validation.extension -y
+      - name: 📦 Pack Chocolatey Package
+        run: choco pack Zoom-VDI-Client/zoom-vdi-client.nuspec
+      - name: 🚀 Install Chocolatey Package
+        run: choco install zoom-vdi-client -y --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"

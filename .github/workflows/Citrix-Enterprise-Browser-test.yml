@@ -1,0 +1,21 @@
+name: Citrix Enterprise Browser test
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'Citrix-Enterprise-Browser/**'
+
+jobs:
+  Test-CEB-Package:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: 🦺 Install validation extension
+        run: choco install chocolatey-community-validation.extension -y
+      - name: 📦 Pack Chocolatey Package
+        run: choco pack Citrix-Enterprise-Browser/Citrix-Enterprise-Browser.nuspec
+      - name: 🚀 Install Chocolatey Package
+        run: choco install citrix-enterprise-browser -y --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"

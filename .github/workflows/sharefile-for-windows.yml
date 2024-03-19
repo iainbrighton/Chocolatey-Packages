@@ -8,20 +8,8 @@ on:
       - 'ShareFile-For-Windows/**'
 
 jobs:
-  Test-sharefile-Package:
-    runs-on: windows-latest
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v4
-      - name: 🦺 Install validation extension
-        run: choco install chocolatey-community-validation.extension -y
-      - name: 📦 Pack Chocolatey Package
-        run: choco pack ShareFile-For-Windows/ShareFile-For-Windows.nuspec
-      - name: 🚀 Install Chocolatey Package
-        run: choco install sharefile-for-windows -y --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"
   Publish-sharefile-Package:
     runs-on: windows-latest
-    needs: Test-sharefile-Package
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
