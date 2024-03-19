@@ -2,6 +2,7 @@
 Publicly published Chocolately packages 
 
 Build status
+
 [![Citrix Enterprise Browser publish](https://github.com/ravager-dk/Chocolatey-Packages/actions/workflows/Citrix-Enterprise-Browser.yml/badge.svg)](https://github.com/ravager-dk/Chocolatey-Packages/actions/workflows/Citrix-Enterprise-Browser.yml)
 
 [![opentofu publish](https://github.com/ravager-dk/Chocolatey-Packages/actions/workflows/opentofu.yml/badge.svg)](https://github.com/ravager-dk/Chocolatey-Packages/actions/workflows/opentofu.yml)
