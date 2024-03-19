@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zoom-vdi-universal-plugin</id>
-    <version>5.17.6.24660</version>
+    <version>5.17.10.24730</version>
     <owners>Martin Nygaard Jensen</owners>
     <title>Zoom VDI Universal Plugin</title>
     <authors>Zoom Video Communications, Inc</authors>
@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/Zoom-VDI-Universal-Plugin</packageSourceUrl>
     <docsUrl>https://support.zoom.us/hc/en-us/sections/4404192199053-Virtual-Desktop-Infrastructure-VDI-</docsUrl>
-    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/730f42afe1ea9002e9b92bfaf7625e129a1db079/Zoom-VDI-Universal-Plugin/Zoom.png?min=1</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/730f42afe1ea9002e9b92bfaf7625e129a1db079/Zoom-VDI-Universal-Plugin/Zoom.png</iconUrl>
     <tags>zoom hdxplugin</tags>
     <summary>Zoom VDI Universal Plugin</summary>
     <description>Zoom VDI Universal Plugin
