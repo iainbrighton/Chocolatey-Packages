@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sharefile-for-windows</id>
-    <version>24.2.2.0</version>
+    <version>24.3.3.0</version>
     <owners>Martin Nygaard Jensen</owners>
     <title>ShareFile For Windows</title>
     <authors>ShareFile</authors>
@@ -20,7 +20,7 @@ ShareFile for Windows allows you to access your files directly through a mapped 
 
 *Requires a ShareFile account to use.
 </description>
-<releaseNotes>https://docs.sharefile.com/en-us/sharefile/whats-new#february-28-2024</releaseNotes>
+<releaseNotes>https://docs.sharefile.com/en-us/sharefile/whats-new</releaseNotes>
     <dependencies>
       <dependency id="netfx-4.7.1" version="4.7.1.0" />
     </dependencies>
