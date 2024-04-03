@@ -1,14 +1,14 @@
-name: opentofu test
+name: opentofu_portable test
 on:
   workflow_dispatch:
   pull_request:
     branches:
       - master
     paths:
-      - 'opentofu/**'
+      - 'opentofu.portable/**'
 
 jobs:
-  Test-opentofu-Package:
+  Test-opentofu_portable-Package:
     runs-on: windows-latest
     steps:
       - name: Check out repository code
@@ -16,8 +16,8 @@ jobs:
       - name: 🦺 Install validation extension
         run: choco install chocolatey-community-validation.extension -y
       - name: 📦 Pack Chocolatey Package
-        run: choco pack opentofu/opentofu.nuspec
+        run: choco pack opentofu.portable/opentofu.portable.nuspec
       - name: 🚀 Install Chocolatey Package
-        run: choco install opentofu -y --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"
+        run: choco install opentofu.portable -y --debug --verbose --source "'.;https://community.chocolatey.org/api/v2/'"
       - name: 🚨 Test opentofu
         run: tofu version
