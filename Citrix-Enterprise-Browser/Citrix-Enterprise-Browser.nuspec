@@ -3,7 +3,7 @@
   <metadata>
     <id>citrix-enterprise-browser</id>
     <title>Citrix Enterprise Browser</title>
-    <version>120.1.1.13</version>
+    <version>122.1.1.2</version>
     <authors>Citrix Systems Inc.</authors>
     <owners>Martin Nygaard Jensen</owners>
     <summary>Citrix Enterprise Browser</summary>
@@ -37,12 +37,14 @@ Cisco Webex
 **Analytics** – If the Citrix Analytics Service is configured, admins can gather information about user behavior and other security insights. For more information about Citrix Analytics, see Getting started section in the Citrix Analytics documentation.</description>
     <projectUrl>https://www.citrix.com/downloads/workspace-app/citrix-enterprise-browser-for-windows/</projectUrl>
     <copyright>(c) Copyright Citrix Systems, Inc.</copyright>
-    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/783bfa717c2eb12bc599cac2c21f7d22c696847b/Citrix-Enterprise-Browser/cwa-embedded-browser-icon.png?min=1</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/ravager-dk/Chocolatey-Packages/783bfa717c2eb12bc599cac2c21f7d22c696847b/Citrix-Enterprise-Browser/cwa-embedded-browser-icon.png</iconUrl>
     <licenseUrl>https://www.citrix.com/buy/licensing/agreements.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Citrix CEB EnterpriseBrowser Browser</tags>
+    <docsUrl>https://docs.citrix.com/en-us/citrix-enterprise-browser</docsUrl>
+    <releaseNotes>https://docs.citrix.com/en-us/citrix-enterprise-browser/whats-new#whats-new-in-122112</releaseNotes>
     <dependencies>
-      <dependency id="citrix-workspace" version="23.11" />
+      <dependency id="citrix-workspace" version="23.11.1" />
     </dependencies>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/Citrix-Enterprise-Browser</packageSourceUrl>
   </metadata>
