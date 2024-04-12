@@ -3,7 +3,7 @@
   <metadata>
     <id>citrix-workspace-ltsr</id>
     <title>Citrix Workspace LTSR</title>
-    <version>22.3.6001.6113</version>
+    <version>24.2.0.172</version>
     <authors>Citrix Systems Inc.</authors>
     <owners>Iain Brighton</owners>
     <summary>Citrix Workspace LTSR</summary>
@@ -17,6 +17,7 @@
     <dependencies>
       <dependency id="netfx-4.8" />
       <dependency id="vcredist140" />
+      <dependency id="dotnet-6.0-desktopruntime" version="6.0.25" />
     </dependencies>
     <packageSourceUrl>https://github.com/iainbrighton/Chocolatey-Packages/tree/master/Citrix-Workspace-LTSR</packageSourceUrl>
   </metadata>
