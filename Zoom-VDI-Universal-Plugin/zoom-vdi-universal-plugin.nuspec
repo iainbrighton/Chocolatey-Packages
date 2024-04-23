@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>zoom-vdi-universal-plugin</id>
-    <version>5.17.10.24730</version>
+    <version>5.17.11.24850</version>
     <owners>Martin Nygaard Jensen</owners>
     <title>Zoom VDI Universal Plugin</title>
     <authors>Zoom Video Communications, Inc</authors>
@@ -15,7 +15,7 @@
     <tags>zoom hdxplugin</tags>
     <summary>Zoom VDI Universal Plugin</summary>
     <description>Zoom VDI Universal Plugin
-Used for optimizing Zoom calls when run in a VDI solution. This component is installed on the client and requires VDI clients to be already installed for correct detection.
+Used for optimizing Zoom calls when run in a VDI solution. This component is installed on the client and requires VDI clients to be already installed for correct detection. Further it requires the VDI Client on the server  (https://community.chocolatey.org/packages/zoom-vdi-client).
 </description>
     <releaseNotes>https://support.zoom.us/hc/en-us/articles/360031768011-Release-notes-for-Virtual-Desktop-Infrastructure-VDI-</releaseNotes>
   </metadata>
