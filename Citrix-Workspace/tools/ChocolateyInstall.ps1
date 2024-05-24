@@ -32,9 +32,9 @@ $installChocolateyPackageParams = @{
     PackageName    = "Citrix-Workspace";
     FileType       = "EXE";
     SilentArgs     = "/noreboot /silent /AutoUpdateCheck=disabled";
-    Url            = "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Win/CitrixWorkspaceApp24.3.0.93.exe";
+    Url            = "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Win/CitrixWorkspaceApp24.3.1.97.exe";
     ValidExitCodes = @(0,3010,40008);
-    Checksum       = "5C369D1C127B14A8530B7441A6D3EC49C681FE672E8447C63ECF453CF8B87237";
+    Checksum       = "4c85eb887e6795dfa160446a23af76b1b80642302a083aad05312885c8aa6a5e";
     ChecksumType   = "sha256";
 }
 Install-ChocolateyPackage @installChocolateyPackageParams;
