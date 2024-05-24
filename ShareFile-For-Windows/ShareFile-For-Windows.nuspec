@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sharefile-for-windows</id>
-    <version>24.3.3.0</version>
+    <version>24.5.3.0</version>
     <owners>Martin Nygaard Jensen</owners>
     <title>ShareFile For Windows</title>
     <authors>ShareFile</authors>
