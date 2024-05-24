@@ -1,7 +1,7 @@
-﻿$downloadUri64 = "https://dl.sharefile.com/cfwin/ShareFileForWindows_x64_v24.3.3.0.msi"
-$downloadUri = "https://dl.sharefile.com/cfwin/ShareFileForWindows_x86_v24.3.3.0.msi"
-$checksum64 = "62C00292AD42C3C94098D4030C78B190C80421A58B180F6851BF5D45D7B67C85"
-$checksum = "FD2C597142FA256E3C8306B1124B93F7843831CE4AF57E75E9682291C68BD7D2"
+﻿$downloadUri64 = "https://dl.sharefile.com/cfwin/ShareFileForWindows_x64_v24.5.3.0.msi"
+$downloadUri = "https://dl.sharefile.com/cfwin/ShareFileForWindows_x86_v24.5.3.0.msi"
+$checksum64 = "377EDB387D822D87D1F94072E6692BB4BB255B249E4F84757411C2F3223742CB"
+$checksum = "FB78CE1BBE2604DC29D1973FA94014E8796D7B366A8258D74BE0BC11631F009D"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
