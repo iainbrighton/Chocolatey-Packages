@@ -4,7 +4,7 @@
 
 #region version variables
 $version = "126"
-$Checksum = "21A43FF5D1F70FA4B8738771EF15250F132A4FEDE9BD367CDCB6B238A2AB24CB";
+$Checksum = "1C510202E5802C41EE98BAF1C8B67B4A70B98CCEFFA3734CFB079782EF3EC96D";
 $ChecksumType = "sha256";
 #endregion version variables
 
