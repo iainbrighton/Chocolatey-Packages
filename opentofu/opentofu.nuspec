@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
    <id>opentofu</id>
-    <version>1.8.0</version>
+    <version>1.8.1</version>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/opentofu</packageSourceUrl>
     <owners>Martin Nygaard Jensen</owners>
     <title>OpenTofu</title>
@@ -31,7 +31,7 @@ The key features of OpenTofu are:
 </description>
     <releaseNotes>https://github.com/opentofu/opentofu/blob/v1.8.0/CHANGELOG.md</releaseNotes>
     <dependencies>
-      <dependency id="opentofu.portable" version="[1.8.0]" />
+      <dependency id="opentofu.portable" version="[1.8.1]" />
     </dependencies>
   </metadata>
   <files>
