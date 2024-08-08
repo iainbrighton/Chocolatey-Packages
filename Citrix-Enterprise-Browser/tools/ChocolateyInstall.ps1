@@ -3,8 +3,8 @@
 #Citrix uses dynamic download links that expire, likely for telemetry reasons. in some cases they provide direct download links, but not in this case. As a result the script needs to parse the download page to get the current dynamic link.
 
 #region version variables
-$version = "126"
-$Checksum = "1C510202E5802C41EE98BAF1C8B67B4A70B98CCEFFA3734CFB079782EF3EC96D";
+$version = "127"
+$Checksum = "7f8ea9476f53cefaa101e8ada58fe3ab35be19f95b44072e70ca40c61390fe38";
 $ChecksumType = "sha256";
 #endregion version variables
 
