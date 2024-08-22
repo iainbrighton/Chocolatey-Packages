@@ -34,7 +34,7 @@ $installChocolateyPackageParams = @{
     SilentArgs     = "/noreboot /silent /AutoUpdateCheck=disabled";
     Url            = "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Win/CitrixWorkspaceApp24.2.1000.1016.exe";
     ValidExitCodes = @(0,3010,40008);
-    Checksum       = "8D438C20A461098D67502A5A4BCADEE669A7AB8146E1683A146D851E4DA01F33";
+    Checksum       = "88CFA935DB4E818533E207C9B3BF30451DD620D68AE5E5A09A8231CF77A83146";
     ChecksumType   = "sha256";
 }
 Install-ChocolateyPackage @installChocolateyPackageParams;
