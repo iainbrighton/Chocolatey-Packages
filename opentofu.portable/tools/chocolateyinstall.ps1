@@ -4,8 +4,8 @@ $toolsPath  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
     PackageName  = "opentofu.portable"
-    File         = "$toolsPath\tofu_1.8.2_windows_386.zip"
-    File64       = "$toolsPath\tofu_1.8.2_windows_amd64.zip"
+    File         = "$toolsPath\tofu_1.8.3_windows_386.zip"
+    File64       = "$toolsPath\tofu_1.8.3_windows_amd64.zip"
     Destination  = $toolsPath
 }
 Get-ChocolateyUnzip @packageArgs
