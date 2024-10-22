@@ -3,7 +3,7 @@
   <metadata>
     <id>citrix-enterprise-browser</id>
     <title>Citrix Enterprise Browser</title>
-    <version>128.1.1.32</version>
+    <version>130.1.1.12</version>
     <authors>Citrix Systems Inc.</authors>
     <owners>Martin Nygaard Jensen</owners>
     <summary>Citrix Enterprise Browser</summary>
@@ -42,9 +42,9 @@ Cisco Webex
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Citrix CEB EnterpriseBrowser Browser</tags>
     <docsUrl>https://docs.citrix.com/en-us/citrix-enterprise-browser</docsUrl>
-    <releaseNotes>https://docs.citrix.com/en-us/citrix-enterprise-browser/whats-new#whats-new-in-1281132</releaseNotes>
+    <releaseNotes>https://docs.citrix.com/en-us/citrix-enterprise-browser/whats-new#whats-new-in-1301112</releaseNotes>
     <dependencies>
-      <dependency id="citrix-workspace" version="24.5" />
+      <dependency id="citrix-workspace" version="24.5.11" />
     </dependencies>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/Citrix-Enterprise-Browser</packageSourceUrl>
   </metadata>
