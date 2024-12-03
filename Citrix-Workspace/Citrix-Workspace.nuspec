@@ -3,7 +3,7 @@
   <metadata>
     <id>citrix-workspace</id>
     <title>Citrix Workspace</title>
-    <version>24.5.11.31</version>
+    <version>24.9.1.207</version>
     <authors>Citrix Systems Inc.</authors>
     <owners>Iain Brighton</owners>
     <summary>Citrix Workspace</summary>
@@ -17,7 +17,7 @@
     <dependencies>
       <dependency id="netfx-4.8" />
       <dependency id="vcredist140" />
-      <dependency id="dotnet-6.0-desktopruntime" version="6.0.20" />
+      <dependency id="dotnet-8.0-desktopruntime" version="8.0.6" />
     </dependencies>
     <packageSourceUrl>https://github.com/iainbrighton/Chocolatey-Packages/tree/master/Citrix-Workspace</packageSourceUrl>
   </metadata>
