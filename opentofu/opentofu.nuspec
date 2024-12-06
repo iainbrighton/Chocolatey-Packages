@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
    <id>opentofu</id>
-    <version>1.8.6</version>
+    <version>1.8.7</version>
     <packageSourceUrl>https://github.com/ravager-dk/Chocolatey-Packages/tree/master/opentofu</packageSourceUrl>
     <owners>Martin Nygaard Jensen</owners>
     <title>OpenTofu</title>
@@ -29,9 +29,9 @@ The key features of OpenTofu are:
 
 - **Change Automation**: Complex changesets can be applied to your infrastructure with minimal human interaction. With the previously mentioned execution plan and resource graph, you know exactly what OpenTofu will change and in what order, avoiding many possible human errors.
 </description>
-    <releaseNotes>https://github.com/opentofu/opentofu/compare/v1.8.5...v1.8.6</releaseNotes>
+    <releaseNotes>https://github.com/opentofu/opentofu/compare/v1.8.6...v1.8.7</releaseNotes>
     <dependencies>
-      <dependency id="opentofu.portable" version="[1.8.6]" />
+      <dependency id="opentofu.portable" version="[1.8.7]" />
     </dependencies>
   </metadata>
   <files>
