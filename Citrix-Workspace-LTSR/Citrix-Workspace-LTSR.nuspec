@@ -3,7 +3,7 @@
   <metadata>
     <id>citrix-workspace-ltsr</id>
     <title>Citrix Workspace LTSR</title>
-    <version>24.2.2000.2031</version>
+    <version>24.2.3001.9</version>
     <authors>Citrix Systems Inc.</authors>
     <owners>Iain Brighton</owners>
     <summary>Citrix Workspace LTSR</summary>
@@ -16,9 +16,9 @@
     <tags>Citrix Receiver Workspace WorkspaceApp Admin LTSR</tags>
     <dependencies>
       <dependency id="netfx-4.8" />
-      <dependency id="vcredist140" version="14.40.33810" />
-      <dependency id="dotnet-8.0-desktopruntime" version="8.0.10" />
-      <dependency id="webview2-runtime" version="130" />
+      <dependency id="vcredist140" version="14.42.34433" />
+      <dependency id="dotnet-8.0-desktopruntime" version="8.0.11" />
+      <dependency id="webview2-runtime" version="131.0.2903.112" />
     </dependencies>
     <packageSourceUrl>https://github.com/iainbrighton/Chocolatey-Packages/tree/master/Citrix-Workspace-LTSR</packageSourceUrl>
   </metadata>
